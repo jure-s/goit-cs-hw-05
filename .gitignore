@@ -1,0 +1,35 @@
+# Загальні Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+*.tmp
+.DS_Store
+
+# Віртуальні середовища
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Тести / кеші
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.cache/
+
+# Дані та результати
+data/output/
+data/**/*.png
+data/**/*.log
+
+# Системні
+Thumbs.db
+desktop.ini

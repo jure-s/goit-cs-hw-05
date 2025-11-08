@@ -1,0 +1,39 @@
+[project]
+name = "goit-cs-hw-05"
+version = "1.0.0"
+description = "Asynchronous file sorter and MapReduce wordcount (GoIT CS HW-05)"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+skip-string-normalization = true
+exclude = '''
+/(
+    \.venv
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E", "F", "W"]
+ignore = [
+  "E501",
+]
+exclude = [
+  ".venv",
+  "__pycache__",
+  "build",
+  "dist",
+]
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+combine-as-imports = true
